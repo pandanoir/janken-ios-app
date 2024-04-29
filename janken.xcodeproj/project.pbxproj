@@ -14,6 +14,10 @@
 		5C9E5A242BDF8C9300EC8FC5 /* jankenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E5A232BDF8C9300EC8FC5 /* jankenTests.swift */; };
 		5C9E5A2E2BDF8C9300EC8FC5 /* jankenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E5A2D2BDF8C9300EC8FC5 /* jankenUITests.swift */; };
 		5C9E5A302BDF8C9300EC8FC5 /* jankenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E5A2F2BDF8C9300EC8FC5 /* jankenUITestsLaunchTests.swift */; };
+		5C9E5A3D2BDF8DA800EC8FC5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E5A3C2BDF8DA800EC8FC5 /* MainView.swift */; };
+		5C9E5A3F2BDF9C8000EC8FC5 /* JankenHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E5A3E2BDF9C8000EC8FC5 /* JankenHandView.swift */; };
+		5C9E5A412BDFAC7B00EC8FC5 /* JankenHandButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E5A402BDFAC7B00EC8FC5 /* JankenHandButton.swift */; };
+		5C9E5A432BDFACC400EC8FC5 /* JankenHandEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E5A422BDFACC400EC8FC5 /* JankenHandEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		5C9E5A292BDF8C9300EC8FC5 /* jankenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jankenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C9E5A2D2BDF8C9300EC8FC5 /* jankenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jankenUITests.swift; sourceTree = "<group>"; };
 		5C9E5A2F2BDF8C9300EC8FC5 /* jankenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jankenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5C9E5A3C2BDF8DA800EC8FC5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5C9E5A3E2BDF9C8000EC8FC5 /* JankenHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankenHandView.swift; sourceTree = "<group>"; };
+		5C9E5A402BDFAC7B00EC8FC5 /* JankenHandButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankenHandButton.swift; sourceTree = "<group>"; };
+		5C9E5A422BDFACC400EC8FC5 /* JankenHandEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankenHandEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,10 @@
 			children = (
 				5C9E5A122BDF8C9200EC8FC5 /* jankenApp.swift */,
 				5C9E5A142BDF8C9200EC8FC5 /* ContentView.swift */,
+				5C9E5A3E2BDF9C8000EC8FC5 /* JankenHandView.swift */,
+				5C9E5A3C2BDF8DA800EC8FC5 /* MainView.swift */,
+				5C9E5A422BDFACC400EC8FC5 /* JankenHandEnum.swift */,
+				5C9E5A402BDFAC7B00EC8FC5 /* JankenHandButton.swift */,
 				5C9E5A162BDF8C9300EC8FC5 /* Assets.xcassets */,
 				5C9E5A182BDF8C9300EC8FC5 /* Preview Content */,
 			);
@@ -257,8 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C9E5A432BDFACC400EC8FC5 /* JankenHandEnum.swift in Sources */,
+				5C9E5A3D2BDF8DA800EC8FC5 /* MainView.swift in Sources */,
+				5C9E5A3F2BDF9C8000EC8FC5 /* JankenHandView.swift in Sources */,
 				5C9E5A152BDF8C9200EC8FC5 /* ContentView.swift in Sources */,
 				5C9E5A132BDF8C9200EC8FC5 /* jankenApp.swift in Sources */,
+				5C9E5A412BDFAC7B00EC8FC5 /* JankenHandButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
