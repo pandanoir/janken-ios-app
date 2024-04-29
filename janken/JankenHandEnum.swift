@@ -7,23 +7,13 @@
 
 import SwiftUI
 
-enum JankenHand: Int {
-    case gu
-    case choki
-    case pa
-    func toString() -> String {
-        switch self {
-            case .gu: "gu"
-            case .choki: "choki"
-            case .pa: "pa"
-        }
+enum JankenHand: Int, Hashable {
+    case gu, choki, pa
+    var toString: String {
+        ["gu", "choki", "pa"][self.rawValue]
     }
-    func getColor() -> Color {
-        switch self {
-            case .gu: .red
-            case .choki: .yellow
-            case .pa: .blue
-        }
+    var color: Color {
+        [.red, .yellow, .blue][self.rawValue]
     }
     func battle(_ cpuHand: JankenHand) -> String {
         ["draw", "lose", "win"][(self.rawValue + 3 - cpuHand.rawValue) % 3]

@@ -13,12 +13,13 @@ struct MainView: View {
     @State var cpuHand: JankenHand?
 
     @State var isZoomed = false
+    @State var result: [(JankenHand, JankenHand)] = []
 
     var body: some View {
         Spacer()
         JankenHandView(hand: $cpuHand)
             .scaleEffect(isZoomed ? 0.85 : 1.0).padding()
-        Text(cpuHand != nil ?playerHand.battle(cpuHand!):" ")
+        Text(cpuHand != nil ? playerHand.battle(cpuHand!) : " ")
         Spacer()
         JankenHandButton(hand: .gu, onChooseHand: onChooseHand)
         HStack{
@@ -29,13 +30,15 @@ struct MainView: View {
             Spacer()
         }
         Spacer()
+        NavigationLink(value: Routes.result(result), label: {Text("戦績")})
     }
     func onChooseHand(_ hand:JankenHand) {
         playerHand = hand
         cpuHand = jankenHands.randomElement()!
-        self.isZoomed = true
-        withAnimation(.easeIn(duration: 0.15)) {
-            self.isZoomed = false
+        result.append((playerHand, cpuHand!))
+        isZoomed = true
+        withAnimation(.spring(duration: 0.15)) {
+            isZoomed = false
         }
     }
 }

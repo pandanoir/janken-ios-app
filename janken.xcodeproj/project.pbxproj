@@ -18,6 +18,7 @@
 		5C9E5A3F2BDF9C8000EC8FC5 /* JankenHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E5A3E2BDF9C8000EC8FC5 /* JankenHandView.swift */; };
 		5C9E5A412BDFAC7B00EC8FC5 /* JankenHandButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E5A402BDFAC7B00EC8FC5 /* JankenHandButton.swift */; };
 		5C9E5A432BDFACC400EC8FC5 /* JankenHandEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E5A422BDFACC400EC8FC5 /* JankenHandEnum.swift */; };
+		5C9E5A452BDFB49700EC8FC5 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E5A442BDFB49700EC8FC5 /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		5C9E5A3E2BDF9C8000EC8FC5 /* JankenHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankenHandView.swift; sourceTree = "<group>"; };
 		5C9E5A402BDFAC7B00EC8FC5 /* JankenHandButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankenHandButton.swift; sourceTree = "<group>"; };
 		5C9E5A422BDFACC400EC8FC5 /* JankenHandEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankenHandEnum.swift; sourceTree = "<group>"; };
+		5C9E5A442BDFB49700EC8FC5 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				5C9E5A122BDF8C9200EC8FC5 /* jankenApp.swift */,
 				5C9E5A142BDF8C9200EC8FC5 /* ContentView.swift */,
 				5C9E5A3E2BDF9C8000EC8FC5 /* JankenHandView.swift */,
+				5C9E5A442BDFB49700EC8FC5 /* ResultView.swift */,
 				5C9E5A3C2BDF8DA800EC8FC5 /* MainView.swift */,
 				5C9E5A422BDFACC400EC8FC5 /* JankenHandEnum.swift */,
 				5C9E5A402BDFAC7B00EC8FC5 /* JankenHandButton.swift */,
@@ -274,6 +277,7 @@
 				5C9E5A3F2BDF9C8000EC8FC5 /* JankenHandView.swift in Sources */,
 				5C9E5A152BDF8C9200EC8FC5 /* ContentView.swift in Sources */,
 				5C9E5A132BDF8C9200EC8FC5 /* jankenApp.swift in Sources */,
+				5C9E5A452BDFB49700EC8FC5 /* ResultView.swift in Sources */,
 				5C9E5A412BDFAC7B00EC8FC5 /* JankenHandButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

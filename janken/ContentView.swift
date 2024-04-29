@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var path = NavigationPath()
     var body: some View {
-        MainView()
+        NavigationStack(path:$path) {
+            MainView()
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationDestination(
+                    for: Routes.self,
+                    destination: { appended in
+                        appended.Destination()
+                            .navigationTitle(appended.toString)
+                            .navigationBarTitleDisplayMode(.inline)
+                    })
+                .navigationTitle(Routes.root.toString)
+        }
     }
 }
 

@@ -10,13 +10,13 @@ import SwiftUI
 struct JankenHandView: View {
     @Binding var hand: JankenHand?
     var body: some View {
-        Image(hand?.toString() ?? "none")
+        Image(hand?.toString ?? "none")
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width:130,height:130)
             .background(
                 Circle()
-                    .foregroundColor((hand?.getColor() ?? .gray).opacity(0.3))
+                    .foregroundColor((hand?.color ?? .gray).opacity(0.3))
                     .frame(width:170, height:170)
             )
     }
